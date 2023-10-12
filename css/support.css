@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 5%;
+    transition: ease .40s;
+    background: rgb(255, 255, 255);
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.099);
+}
+
+nav {
+    display: flex;
+    padding-left: 150px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin-left: 100px;
+}
+
+nav ul a {
+    margin-right: 50px;
+    color: black;
+}
+
+nav ul a:hover {
+    color: #0A8080;
+}
+
+.img-log {
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.img-log a {
+    margin-top: 8px;
+}
+
+
+.login {
+    margin-left: 350px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.login a {
+    margin-right: 15px;
+}
+
+.login .get {
+    color: #0A8080;
+}
+
+.login .line {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 9px;
+}
+
+.sub {
+    background-color: #efe2da8b;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-form {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto 50px;
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    border-radius: 2%;
+}
+
+.sub-form .text {
+    line-height: 2rem;
+}
+
+
+input[type="email"] {
+    background-color: #d4dae2b3;
+    color: #7589a189;
+    outline: none;
+    border: none;
+    border-radius: 2%;
+    padding: 10px 50px;
+}
+
+input[type="submit"] {
+    background-color: #DB4A87;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    background-color: #d4dae2b3;
+    outline: none;
+    border: none;
+}
+
+span {
+    font-size: 12px;
+    color: #9095ada0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.footer h4 {
+    font-size: 18px;
+    color: #0F2137;
+
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 2rem;
+    color: #0F2137;
+}
+
+.footer .copy {
+    color: #0f213775;
+}
+
+.footer li {
+    font-size: 15px;
+    color: #02073ed5;
+    line-height: 2rem;
+}
+
+.footer i {
+    font-size: 20px;
+}
+
+.footer i.fb {
+    color: blue;
+}
+
+.footer i.tw {
+    color: rgb(62, 154, 240);
+}
+
+.footer i.dr {
+    color: rgb(244, 35, 87);
+}
