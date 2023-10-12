@@ -82,16 +82,62 @@ nav ul a:hover {
 
 .login .line {
     width: fit-content;
-    margin-inline: 9px auto;
-    /* margin-left: auto;
-    margin-right: 9px; */
+    margin-left: auto;
+    margin-right: 9px;
 }
 
 
 .home {
     display: flex;
+    margin: 0 80px;
     align-items: center;
-    justify-content: space-around;
+}
+
+.home-text {
+    color: #02073E;
+    max-width: 45%;
+    line-height: 3rem;
+}
+
+.home-text h1 {
+    font-size: 50px;
+}
+
+.home-text p {
+    font-size: 24px;
+}
+
+.home img {
+    position: relative;
+    bottom: -100px;
+}
+
+
+.service {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin: 70px;
+}
+
+.service-a {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-text {
+    line-height: 2rem;
+}
+
+.title-1 {
+    padding-left: 580px;
+    font-size: 30px;
+}
+
+.title-2 {
+    padding-left: 480px;
+    font-size: 30px;
 }
 
 .sub {
