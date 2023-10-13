@@ -84,20 +84,23 @@ nav ul a:hover {
     width: fit-content;
     margin-left: auto;
     margin-right: 9px;
+
 }
 
 
 .home {
     display: flex;
-    margin: 0 80px;
+    margin: 80px 80px;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
+    z-index: 2;
 }
 
 .home-text {
     color: #02073E;
-    max-width: 45%;
+    max-width: 40%;
     line-height: 3rem;
+    padding-bottom: 200px;
 
 }
 
@@ -111,12 +114,12 @@ nav ul a:hover {
 }
 
 .home-img {
-    max-width: 45%;
+    max-width: 50%;
 }
 
 .home-btn {
     display: inline-block;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     padding: 0px 50px;
     background: #EEB545;
@@ -125,11 +128,13 @@ nav ul a:hover {
 }
 
 .container {
-    background-color: #ffe1c98f;
+    background-color: #ffe7d36b;
     display: flex;
     align-items: center;
     gap: 50px;
     padding: 50px 150px;
+    z-index: 2;
+    margin-top: -250px;
 }
 
 .contact-form {
