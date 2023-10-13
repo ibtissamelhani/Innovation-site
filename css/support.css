@@ -86,6 +86,102 @@ nav ul a:hover {
     margin-right: 9px;
 }
 
+
+.home {
+    display: flex;
+    margin: 0 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-text {
+    color: #02073E;
+    max-width: 45%;
+    line-height: 3rem;
+
+}
+
+.home-text h1 {
+    font-size: 50px;
+    line-height: 5rem;
+}
+
+.home-text p {
+    font-size: 22px;
+}
+
+.home-img {
+    max-width: 45%;
+}
+
+.home-btn {
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    padding: 0px 50px;
+    background: #EEB545;
+    border-radius: 10px;
+    margin: 30px 100px;
+}
+
+.container {
+    background-color: #ffe1c98f;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 150px;
+}
+
+.contact-form {
+    background-color: white;
+    margin: 50px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+.contact-form form {
+    padding: 20px;
+}
+
+.contact-form input {
+    background-color: white;
+    color: #7589a189;
+    outline: rgba(71, 69, 69, 0.756);
+    border: 1px solid;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   
+}
+
+.contact-form .name {
+    display: flex;
+    gap: 10px;
+}
+.contact-form input[type="submit"] {
+    background-color: #E48700;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-text {
+    max-width: 45%;
+    line-height: 3rem;
+    color: #02073E;
+}
+.contact-text h1 {
+    font-size: 29px;
+}
+label {
+    font-size: 15px;
+}
+
 .sub {
     background-color: #efe2da8b;
     display: flex;
@@ -107,22 +203,22 @@ nav ul a:hover {
 }
 
 
-input[type="email"] {
+.sub-form input[type="email"] {
     background-color: #d4dae2b3;
     color: #7589a189;
     outline: none;
     border: none;
-    border-radius: 2%;
+    border-radius: 5px;
     padding: 10px 50px;
 }
 
-input[type="submit"] {
+.sub-form input[type="submit"] {
     background-color: #DB4A87;
     color: white;
     outline: none;
     border: none;
     padding: 10px 20px;
-    border-radius: 5%;
+    border-radius: 5px;
     cursor: pointer;
 }
 
