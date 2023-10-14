@@ -281,14 +281,14 @@ span {
     font-size: 20px;
 }
 
-.footer i.fb {
+i.fb {
     color: blue;
 }
 
-.footer i.tw {
+i.tw {
     color: rgb(62, 154, 240);
 }
 
-.footer i.dr {
+i.dr {
     color: rgb(244, 35, 87);
 }
