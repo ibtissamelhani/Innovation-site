@@ -76,14 +76,19 @@ nav ul a:hover {
     margin-right: 15px;
 }
 
+.login a:hover{
+    color: #0A8080;
+}
+
 .login .get {
     color: #0A8080;
+    z-index: 2;
 }
 
 .login .line {
     width: fit-content;
-    margin-left: auto;
-    margin-right: 9px;
+    margin: -10px 9px 0 auto;
+    z-index: 1;
 }
 
 
@@ -162,7 +167,7 @@ nav ul a:hover {
 
 
 input[type="email"] {
-    background-color: #d4dae2b3;
+    background-color: #EFF3F7;
     color: #7589a189;
     outline: none;
     border: none;
