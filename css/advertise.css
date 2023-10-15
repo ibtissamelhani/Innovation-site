@@ -16,6 +16,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -130,19 +131,21 @@ nav ul a:hover {
     justify-content: center;
     gap: 20px;
 }
-
+.service-a h1 {
+    font-size: 18px;
+}
 .service-text {
     line-height: 2rem;
 }
 
 .title-1 {
     padding-left: 580px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .title-2 {
     padding-left: 480px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .sub {
@@ -204,7 +207,7 @@ span {
     margin: 50px auto;
 }
 
-.footer h4 {
+.footer h1 {
     font-size: 18px;
     color: #0F2137;
 

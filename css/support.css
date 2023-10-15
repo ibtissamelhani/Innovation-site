@@ -16,6 +16,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -247,7 +248,7 @@ span {
     margin: 50px auto;
 }
 
-.footer h4 {
+.footer h1 {
     font-size: 18px;
     color: #0F2137;
 

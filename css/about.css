@@ -16,6 +16,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -148,23 +149,16 @@ nav ul a:hover {
 .cont-2 {
     display: flex;
     align-items: center;
-    gap: 30px;
-    max-width: 80%;
-    margin: 0 auto 20px;
+    justify-content: center;
+    padding:0 10% 5%;
+
 }
-
-.cont-1,
-.cont-2 img {
-    height: 500px;
-}
-
-
 
 .title {
     margin-top: 40px;
 }
 
-.title h3 {
+.title h1 {
     font-size: 30px;
     text-align: center;
 }
@@ -181,7 +175,7 @@ nav ul a:hover {
     gap: 50px;
 }
 
-.team .team-img h5 {
+.team .team-img h1 {
     font-size: 15px;
     line-height: 2rem;
 }
@@ -255,7 +249,7 @@ span {
     margin: 50px auto;
 }
 
-.footer h4 {
+.footer h1 {
     font-size: 18px;
     color: #0F2137;
 

@@ -16,6 +16,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -125,7 +126,7 @@ nav ul a:hover {
 
 .contact-form input {
     background-color: white;
-    color: #7589a189;
+    color: #4c4c4c;
     outline: rgba(71, 69, 69, 0.756);
     border: 1px solid;
     display: block;
@@ -170,7 +171,7 @@ label {
 
 .sub-form input[type="email"] {
     background-color: #d4dae2b3;
-    color: #7589a189;
+    color: #7589a1;
     outline: none;
     border: none;
     border-radius: 5px;
@@ -178,7 +179,7 @@ label {
 }
 
 .sub-form input[type="submit"] {
-    background-color: #DB4A87;
+    background-color: #db4a86;
     color: white;
     outline: none;
     border: none;
@@ -188,7 +189,7 @@ label {
 }
 
 input[type="checkbox"] {
-    background-color: #d4dae2b3;
+    background-color: #d4dae2;
     outline: none;
     border: none;
 }
@@ -206,7 +207,7 @@ span {
     margin: 50px auto;
 }
 
-.footer h4 {
+.footer h1 {
     font-size: 18px;
     color: #0F2137;
 

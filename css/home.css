@@ -16,6 +16,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -150,9 +151,9 @@ nav ul a:hover {
     width: fit-content;
 }
 
-.container .text h5 {
+.container .text span {
     font-size: 16px;
-    color: #7E8896;
+    color: #5d5e5e;
 }
 
 .container i {
@@ -178,7 +179,7 @@ nav ul a:hover {
     margin-top: 80px;
 }
 
-.title h3 {
+.title h1 {
     font-size: 30px;
     text-align: center;
 }
@@ -195,14 +196,14 @@ nav ul a:hover {
     gap: 30px;
 }
 
-.team .team-img h5 {
+.team .team-img h1 {
     font-size: 15px;
     line-height: 2rem;
 }
 
 .team .team-img p {
     font-size: 10px;
-    color: #7589A1;
+    color: #494a4a;
 }
 
 .team .team-img {
@@ -216,7 +217,7 @@ nav ul a:hover {
     gap: 30px;
 }
 
-.blog h3 {
+.blog h1 {
     color: #0F2137;
     font-size: 20px;
 }
@@ -242,7 +243,7 @@ nav ul a:hover {
     position: relative;
 }
 
-.blog-5 h3 {
+.blog-5 h1 {
     position: absolute;
     top: 25%;
     color: white;
@@ -251,7 +252,7 @@ nav ul a:hover {
 }
 
 
-.blog-6 h3 {
+.blog-6 h1 {
     position: absolute;
     top: 79%;
     color: white;
@@ -282,7 +283,7 @@ nav ul a:hover {
 
 input[type="email"] {
     background-color: #EFF3F7;
-    color: #7589a189;
+    color: #08080889;
     outline: none;
     border: none;
     border-radius: 2%;
@@ -300,14 +301,14 @@ input[type="submit"] {
 }
 
 input[type="checkbox"] {
-    background-color: #d4dae2b3;
+    background-color: #424343;
     outline: none;
     border: none;
 }
 
 span {
     font-size: 12px;
-    color: #9095AD;
+    color: #0f0f1061;
 }
 
 .footer {
@@ -318,7 +319,7 @@ span {
     margin: 50px auto;
 }
 
-.footer h4 {
+.footer h1 {
     font-size: 18px;
     color: #0F2137;
 
