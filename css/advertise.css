@@ -28,9 +28,9 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20%;
     background: transparent;
-    padding: 30px 5%;
+    padding: 30px 10%;
     transition: ease .40s;
     background: rgb(255, 255, 255);
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.099);
@@ -38,17 +38,16 @@ header {
 
 nav {
     display: flex;
-    padding-left: 150px;
-    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 nav ul {
     display: flex;
-    margin-left: 100px;
+    gap: 30px;
 }
 
 nav ul a {
-    margin-right: 50px;
     color: black;
 }
 
@@ -58,72 +57,68 @@ nav ul a:hover {
 
 .img-log {
     display: flex;
+    align-items: center;
     gap: 10px;
-    margin-right: 10px;
 }
-
-.img-log a {
-    margin-top: 8px;
-}
-
 
 .login {
-    margin-left: 350px;
-    width: fit-content;
-    margin-top: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-.login a {
-    margin-right: 15px;
+
+.line {
+    display: flex;
+    flex-direction: column;
 }
 
-.login a:hover{
+.line a {
     color: #0A8080;
 }
 
-.login .get {
+.login a:hover {
     color: #0A8080;
-    z-index: 2;
 }
 
-.login .line {
-    width: fit-content;
-    margin: -10px 9px 0 auto;
-    z-index: 1;
+header .fa-solid {
+    display: none;
+    font-size: 25px;
 }
-
 
 .home {
     display: flex;
-    margin: 0 80px;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .home-text {
     color: #02073E;
-    max-width: 45%;
-    line-height: 3rem;
+    flex-basis: 40%;
 }
 
 .home-text h1 {
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 3rem;
 }
 
 .home-text p {
-    font-size: 24px;
+    font-size: 21px;
+    line-height: 3rem;
 }
 
 .home img {
-    position: relative;
-    bottom: -100px;
+    width: 500px;
+    height: 500px;
 }
 
 
 .service {
     display: flex;
     justify-content: center;
-    gap: 70px;
-    margin: 70px;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .service-a {
@@ -131,20 +126,29 @@ nav ul a:hover {
     justify-content: center;
     gap: 20px;
 }
+
 .service-a h1 {
     font-size: 18px;
 }
+
+.service-a a {
+    color: blue;
+}
+
 .service-text {
     line-height: 2rem;
 }
 
-.title-1 {
-    padding-left: 580px;
-    font-size: 20px;
+.advertise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
 }
 
+.title-1,
 .title-2 {
-    padding-left: 480px;
     font-size: 20px;
 }
 
@@ -156,6 +160,7 @@ nav ul a:hover {
 
 .sub-form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px auto 50px;
     align-items: center;
@@ -168,6 +173,22 @@ nav ul a:hover {
     line-height: 2rem;
 }
 
+.sub-form .text p {
+    font-size: 15px;
+}
+
+.sub-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sub-form .input-s {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 input[type="email"] {
     background-color: #EFF3F7;
@@ -201,11 +222,13 @@ span {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
     max-width: 80%;
     margin: 50px auto;
 }
+
 
 .footer h1 {
     font-size: 18px;
@@ -243,4 +266,73 @@ span {
 
 .footer i.dr {
     color: rgb(244, 35, 87);
+}
+
+
+@media screen and (max-width:650px) {
+    nav {
+        display: none;
+        /* justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 80%;
+        z-index: 1;
+        margin-left: 50%;
+        background-color: #d2661eb9;*/
+    }
+
+    /* nav ul,
+    .login {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 25px;
+    }
+*/
+    header .fa-solid {
+        display: block;
+    }
+
+    .cactus,
+    .book {
+        display: none;
+    }
+
+    .sub-form {
+        padding: 30px;
+        flex-grow: 1;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    .home {
+        padding-top: 20%;
+        gap: 0;
+    }
+    .advertise {
+        z-index: 2;
+        margin-top: -100;
+    }
+
+    .home-text {
+        flex-basis: 100%;
+    }
+
+    .home-text h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .home-text p {
+        display: none;
+    }
+
+
+
+    .advertise .title-1,
+    .title-2 {
+        font-size: 16px;
+        text-align: center;
+    }
 }

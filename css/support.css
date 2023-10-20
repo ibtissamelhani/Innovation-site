@@ -6,8 +6,8 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
     color: black;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -28,9 +28,9 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20%;
     background: transparent;
-    padding: 30px 5%;
+    padding: 30px 10%;
     transition: ease .40s;
     background: rgb(255, 255, 255);
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.099);
@@ -38,17 +38,16 @@ header {
 
 nav {
     display: flex;
-    padding-left: 150px;
-    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 nav ul {
     display: flex;
-    margin-left: 100px;
+    gap: 30px;
 }
 
 nav ul a {
-    margin-right: 50px;
     color: black;
 }
 
@@ -58,52 +57,51 @@ nav ul a:hover {
 
 .img-log {
     display: flex;
+    align-items: center;
     gap: 10px;
-    margin-right: 10px;
 }
 
-.img-log a {
-    margin-top: 8px;
-}
 
 .login {
-    margin-left: 350px;
-    width: fit-content;
-    margin-top: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-.login a {
-    margin-right: 15px;
+.line {
+    display: flex;
+    flex-direction: column;
 }
-.login a:hover{
+
+.line a {
     color: #0A8080;
 }
 
-.login .get {
+.login a:hover {
     color: #0A8080;
-    z-index: 2;
 }
 
-.login .line {
-    width: fit-content;
-    margin: -10px 9px 0 auto ;
-    z-index: 1;
+header .fa-solid {
+    display: none;
+    font-size: 25px;
 }
 
 .home {
     display: flex;
-    margin: 80px 80px;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    padding-top: 5%;
     z-index: 2;
 }
 
 .home-text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     color: #02073E;
-    max-width: 40%;
     line-height: 3rem;
-    padding-bottom: 200px;
-
 }
 
 .home-text h1 {
@@ -116,40 +114,38 @@ nav ul a:hover {
 }
 
 .home-img {
-    max-width: 50%;
+    width: 550px;
+    height: 500px;
+    /* max-width: 50%; */
 }
 
 .home-btn {
     display: inline-block;
     font-size: 20px;
     color: white;
-    padding: 0px 50px;
+    padding: 0px 20px;
     background: #EEB545;
     border-radius: 10px;
-    margin: 30px 100px;
 }
 
 .container {
-    background-color: #ffe7d36b;
+    background-color: #ffe1c974;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 50px 150px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 13% 5% 5%;
+    margin-top: -50px;
     z-index: 2;
-    margin-top: -250px;
 }
 
 .contact-form {
     background-color: white;
-    margin: 50px;
     height: 540px;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.contact-form form {
-    padding: 20px;
 }
 
 .contact-form input {
@@ -163,13 +159,14 @@ nav ul a:hover {
     padding: 15px 25px;
     border-radius: 5px;
     margin-bottom: 20px;
-   
+
 }
 
 .contact-form .name {
     display: flex;
     gap: 10px;
 }
+
 .contact-form input[type="submit"] {
     background-color: #E48700;
     color: white;
@@ -182,9 +179,11 @@ nav ul a:hover {
     line-height: 3rem;
     color: #02073E;
 }
+
 .contact-text h1 {
     font-size: 29px;
 }
+
 label {
     font-size: 15px;
 }
@@ -197,6 +196,7 @@ label {
 
 .sub-form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px auto 50px;
     align-items: center;
@@ -209,6 +209,22 @@ label {
     line-height: 2rem;
 }
 
+.sub-form .text p {
+    font-size: 15px;
+}
+
+.sub-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sub-form .input-s {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .sub-form input[type="email"] {
     background-color: #d4dae2b3;
@@ -240,8 +256,10 @@ span {
     color: #9095ada0;
 }
 
+
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
     max-width: 80%;
@@ -284,4 +302,59 @@ span {
 
 .footer i.dr {
     color: rgb(244, 35, 87);
+}
+
+
+@media screen and (max-width:650px) {
+    nav {
+        display: none;
+        /* justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 80%;
+        z-index: 1;
+        margin-left: 50%;
+        background-color: #d2661eb9;*/
+    }
+
+    /* nav ul,
+    .login {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 25px;
+    }
+*/
+    header .fa-solid {
+        display: block;
+    }
+
+    .cactus,
+    .book {
+        display: none;
+    }
+    .home {
+        padding-top: 20%;
+    }
+
+    .home-text p {
+        display: none;
+    }
+    .container {
+        padding-top: 40%;
+        margin-top: -50%;
+    }
+
+    .container .contact-text {
+        display: none;
+    }
+
+    .sub-form {
+        padding: 30px;
+        flex-grow: 1;
+        margin: 10px;
+        gap: 10px;
+    }
+
 }

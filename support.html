@@ -22,11 +22,11 @@
 <body>
 
     <header>
+        <div class="img-log">
+            <img src="img/logo.png" alt="">
+            <a href="index.html" class="logo">innovations</a>
+        </div>
         <nav>
-            <div class="img-log">
-                <img src="img/logo.png" alt="">
-                <a href="index.html" class="logo">innovations</a>
-            </div>
 
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,28 +37,31 @@
 
             <div class="login">
                 <a href="login.html">login </a>
-                <a href="login.html" class="get">Get Started</a>
                 <div class="line">
+                    <a href="login.html" class="get">Get Started</a>
                     <img src="img/line.png" alt="">
                 </div>
-
             </div>
 
         </nav>
+        <i class="fa-solid fa-bars"></i>
     </header>
 
 
     <section class="home">
         <div class="home-text">
-            <h1>Contact Us</h1>
-            <p>If you're looking for a partner that is dedicated to your success, don't hesitate to reach out to us
-                today.</p>
+            <div>
+                <h1>Contact Us</h1>
+                <p>If you're looking for a partner that is dedicated to your<br> success, don't hesitate to reach out to
+                    us today.</p>
+            </div>
             <a href="#form" class="home-btn">let’s get in touch</a>
         </div>
         <div class="home-img">
-            <img src="img/contact.png" alt="">
+            <img src="img/contact.png" alt="" width="600px" height="600px">
         </div>
     </section>
+
 
     <section class="container" id="form">
         <div class="contact-form">
@@ -103,15 +106,14 @@
             </div>
             <div>
                 <form>
-                    <div>
+                    <div class="input-s">
                         <input type="email" placeholder="Enter Email address" aria-label="email">
-                        <input type="submit" value="Subscribe" aria-label="submit">
-                    </div>
-                    <div>
-                        <input type="checkbox" aria-label="checkbox"><span> Don’t provide any promotional
+                        <span><input type="checkbox" aria-label="checkbox"> Don’t provide any promotional
                             message.</span>
                     </div>
-
+                    <div>
+                        <input type="submit" value="Subscribe" aria-label="Subscribe">
+                    </div>
                 </form>
 
             </div>

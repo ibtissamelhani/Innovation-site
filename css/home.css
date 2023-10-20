@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     color: black;
+    /* border: 1px solid brown; */
 }
 
 body {
@@ -28,9 +29,9 @@ header {
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20%;
     background: transparent;
-    padding: 30px 5%;
+    padding: 30px 10%;
     transition: ease .40s;
     background: rgb(255, 255, 255);
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.099);
@@ -38,19 +39,19 @@ header {
 
 nav {
     display: flex;
-    padding-left: 150px;
-    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 nav ul {
     display: flex;
-    margin-left: 100px;
+    gap: 30px;
 }
 
 nav ul a {
-    margin-right: 50px;
     color: black;
 }
+
 
 nav ul a:hover {
     color: #0A8080;
@@ -58,50 +59,48 @@ nav ul a:hover {
 
 .img-log {
     display: flex;
+    align-items: center;
     gap: 10px;
-    margin-right: 10px;
-}
-
-.img-log a {
-    margin-top: 8px;
 }
 
 
 .login {
-    margin-left: 350px;
-    width: fit-content;
-    margin-top: 20px;
+    display: flex;
+    gap: 20px;
 }
 
-.login a {
-    margin-right: 15px;
-}
-
-.login a:hover{
+.login a:hover {
     color: #0A8080;
 }
-.login .get {
-    color: #0A8080;
-    z-index: 2;
+
+.line {
+    display: flex;
+    flex-direction: column;
 }
 
-.login .line {
-    width: fit-content;
-    margin: -10px 9px 0 auto ;
-    z-index: 1;
+.line a {
+    color: #0A8080;
+}
+
+header .fa-solid {
+    display: none;
+    font-size: 25px;
 }
 
 .home {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
+    height: 100vh;
     padding: 100px;
 }
 
 .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-
+    gap: 10px;
 }
 
 .home-text h1 {
@@ -110,7 +109,6 @@ nav ul a:hover {
 
 .home-text p {
     font-size: 1rem;
-    margin-top: 20px;
 }
 
 .home-btn {
@@ -120,35 +118,32 @@ nav ul a:hover {
     color: white;
     background: #0A8080;
     border-radius: 4px;
-    margin-top: 20px;
 }
 
-.home-img {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 100px;
+.home-img .end {
+    display: none;
 }
 
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 100px 20px;
+    background-color: #DB4A87;
     background-color: #ffeddf6e;
-    justify-content: center;
-    justify-content: space-around;
-    margin-top: 150px;
-    height: 670px;
+    margin-top: 140px;
 }
 
 .container .text {
     display: flex;
-    margin-top: 200px;
+
 }
 
 .container .text p {
     font-size: 24px;
     line-height: 4rem;
     padding-top: 2px;
-    width: fit-content;
 }
 
 .container .text span {
@@ -158,21 +153,18 @@ nav ul a:hover {
 
 .container i {
     font-size: 60px;
-    margin-left: 400px;
     color: #7e88964f;
 }
 
 .container .images {
-    margin: 110px;
-    justify-content: center;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 20px 0;
     border-top: solid rgba(90, 88, 88, 0.327);
     border-bottom: solid rgba(90, 88, 88, 0.327);
 
-}
-
-.container .images img {
-    margin-left: 100px;
 }
 
 .title {
@@ -189,12 +181,22 @@ nav ul a:hover {
     line-height: 2rem;
 }
 
+.superhero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .team {
     display: flex;
-    max-width: 900px;
-    margin: 50px auto 0;
+    flex-wrap: wrap;
     gap: 30px;
 }
+/* 
+.team .team-img {
+    max-width: 33.33%;
+} */
 
 .team .team-img h1 {
     font-size: 15px;
@@ -206,15 +208,18 @@ nav ul a:hover {
     color: #494a4a;
 }
 
-.team .team-img {
-    width: 33.33%;
+.bloging {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
 .blog {
     display: flex;
-    margin: 50px auto 50px;
-    max-width: 1190px;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .blog h1 {
@@ -240,24 +245,24 @@ nav ul a:hover {
 }
 
 .blog-4 {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 2;
 }
+
+.blog-5 {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .blog-5 h1 {
-    position: absolute;
-    top: 25%;
-    color: white;
-    font-size: 18px;
-    margin-left: 20px;
-}
-
-
-.blog-6 h1 {
-    position: absolute;
-    top: 79%;
-    color: white;
-    font-size: 18px;
-    margin-left: 20px;
+    z-index: 3;
+    margin-top: -100px;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 0 10px;
 }
 
 .sub {
@@ -268,12 +273,30 @@ nav ul a:hover {
 
 .sub-form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px auto 50px;
     align-items: center;
     background-color: white;
     width: 80%;
     border-radius: 2%;
+}
+
+.sub-form .text p {
+    font-size: 15px;
+}
+
+.sub-form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sub-form .input-s {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .sub-form .text {
@@ -315,6 +338,7 @@ span {
     display: flex;
     justify-content: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     max-width: 80%;
     margin: 50px auto;
 }
@@ -348,10 +372,93 @@ span {
 i.fb {
     color: blue;
 }
+
 i.tw {
     color: rgb(62, 154, 240);
 }
 
 i.dr {
     color: rgb(244, 35, 87);
+}
+
+
+@media screen and (max-width:650px) {
+    nav {
+        display: none;
+        /* justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 80%;
+        z-index: 1;
+        margin-left: 50%;
+        background-color: #d2661eb9;*/
+    }
+
+    /* nav ul,
+    .login {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 25px;
+    }
+*/
+    header .fa-solid {
+        display: block;
+    }
+
+    .home-img .start,
+    .home-text p {
+        display: none;
+    }
+
+    .home-text h1 {
+        font-size: 22px;
+    }
+
+    .home {
+        padding: 30% 0;
+        z-index: 3;
+    }
+
+    .home .end {
+        display: block;
+    }
+
+    .container {
+        z-index: 1;
+        margin-top: -50%;
+    }
+    .container .text p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+    .container .text span {
+        font-size: 12px;
+    } 
+    .container .text i {
+        font-size: 30px;
+    } 
+    .blog {
+        padding: 20px;
+    }
+    .blog h1 {
+        font-size: 19px;
+    }
+    .blog p {
+        font-size: 15px;
+    }
+
+    .cactus,
+    .book {
+        display: none;
+    }
+
+    .sub-form {
+        padding: 30px;
+        flex-grow: 1;
+        margin: 10px;
+        gap: 10px;
+    }
+
 }

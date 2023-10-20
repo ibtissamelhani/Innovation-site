@@ -21,31 +21,29 @@
 
 <body>
     <header>
+        <div class="img-log">
+            <img src="img/logo.png" alt="">
+            <a href="index.html" class="logo">innovations</a>
+        </div>
         <nav>
-            <div class="img-log">
-                <img src="img/logo.png" alt="">
-                <a aria-label="innovations" href="index.html" class="logo">innovations</a>
-            </div>
 
             <ul>
-                <li><a aria-label="Home" href="index.html">Home</a></li>
-                <li><a aria-label="Advertise" href="advertise.html">Advertise</a></li>
-                <li><a aria-label="About" href="about.html">About</a></li>
-                <li><a aria-label="Support" href="support.html">Support</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="advertise.html">Advertise</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
             </ul>
 
             <div class="login">
-                <div>
-                    <a aria-label="login" href="login.html">login </a>
-                    <a aria-label="Get Started" href="login.html" class="get">Get Started</a>
-                </div>
-
+                <a href="login.html">login </a>
                 <div class="line">
-                    <img src="img/line.png" alt="" >
+                    <a href="login.html" class="get">Get Started</a>
+                    <img src="img/line.png" alt="">
                 </div>
-
             </div>
+
         </nav>
+        <i class="fa-solid fa-bars"></i>
     </header>
 
 
@@ -56,14 +54,16 @@
             <a aria-label="Get Started" href="login.html" class="home-btn">Get Started</a>
         </div>
         <div class="home-img">
-            <img src="img/home.png" alt="" >
+            <img class="start" src="img/home.png" alt="">
+            <img class="end" src="img/startup.png" alt="">
         </div>
     </section>
 
     <section class="container">
-
         <div class="text">
-            <div><i class="fa-solid fa-quote-left"></i></div>
+            <div>
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
             <div>
                 <p>“Whatever we create in Qwilr looks absolutely brilliant. It helps show <br>our work in the best
                     light, and is downright impressive when clients see <br> a Qwilr Page we have made for them.”</p>
@@ -84,7 +84,7 @@
     </section>
 
 
-    <section>
+    <section class="superhero">
         <div class="title">
             <h1>Meet our superheros</h1>
             <p>Build an incredible workplace and grow your business with Gusto’s all<br>in-one platform with amazing
@@ -132,7 +132,7 @@
     </section>
 
 
-    <section>
+    <section class="bloging">
         <div class="title">
             <h1>Popular blog post we update everyday</h1>
             <p>Focus only on the meaning, we take care of the design. As soon as the <br>meeting end you can export in
@@ -161,7 +161,7 @@
                     <img src="img/Mask3.png" alt="">
                     <h1>Multiple task wireframing with team<br> management perform better</h1>
                 </div>
-                <div class="blog-6">
+                <div class="blog-5">
                     <img src="img/Mask4.png" alt="">
                     <h1>Team presentation with latest user <br>interface & experience reach more</h1>
                 </div>
@@ -181,13 +181,13 @@
             </div>
             <div>
                 <form>
-                    <div>
+                    <div class="input-s">
                         <input type="email" placeholder="Enter Email address" aria-label="email">
-                        <input type="submit" value="Subscribe" aria-label="submit">
+                        <span><input type="checkbox" aria-label="checkbox"> Don’t provide any promotional
+                            message.</span>
                     </div>
                     <div>
-                        <input type="checkbox" aria-label="checkbox"><span> Don’t provide any promotional
-                            message.</span>
+                        <input type="submit" value="Subscribe" aria-label="Subscribe">
                     </div>
                 </form>
             </div>
