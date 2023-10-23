@@ -39,6 +39,8 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     flex-grow: 1;
 }
 
@@ -63,6 +65,7 @@ nav ul a:hover {
 
 .login {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -86,6 +89,7 @@ header .fa-solid {
 
 .home {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     margin: 50px 0;
@@ -112,11 +116,18 @@ header .fa-solid {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    gap: 20px;
     background-color: #ffeddf51;
     z-index: 1;
+    padding: 8% 50px 50px;
     margin-top: -200px;
-    ;
+
+}
+
+.container .text {
+    max-width: 50%;
 }
 
 .container p {
@@ -128,29 +139,66 @@ header .fa-solid {
 .container h1 {
     font-size: 40px;
     line-height: 3rem;
+    text-align: center;
     color: #0d0e0f;
+}
+
+.container img {
+    height: 500px;
+    width: 600px;
+    border-radius: 15px;
 }
 
 .cont-1 {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
-    max-width: 80%;
-    padding-top: 100px;
-    margin: 50px auto 50px;
+    align-items: center;
 }
 
 .cont-2 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    padding: 0 10% 5%;
+    gap: 30px;
+}
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5%;
 
 }
 
-.title {
-    margin-top: 40px;
+.FAQ .question {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0a8080ab;
+    width: 70%;
+    border-radius: 5px;
+    padding: 20px 30px ;
 }
+
+.FAQ .question div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: black 1px dashed;
+}
+
+.FAQ div h1 {
+    font-size: 16px;
+    text-align: left;
+}
+
+/* .FAQ .on {
+    display: none;
+} */
+
+
 
 .title h1 {
     font-size: 30px;
@@ -341,8 +389,25 @@ i.dr {
     }
 
     .home {
-        padding-top: 20%;
+        padding: 20px 10px;
     }
+
+    .home-title h1 {
+        font-size: 50px;
+    }
+
+    .home-title p {
+        font-size: 18px;
+    }
+
+    .cont-1,
+    .cont-2 {
+        display: none;
+    }
+
+    /* .FAQ .on {
+        display: flex;
+    } */
 
     .cactus,
     .book {
