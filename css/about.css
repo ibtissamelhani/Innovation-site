@@ -172,33 +172,69 @@ header .fa-solid {
 
 }
 
-.FAQ .question {
+.FAQ .bloc {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: #0a8080ab;
-    width: 70%;
-    border-radius: 5px;
-    padding: 20px 30px ;
+    max-width: 70%;
+    background-color: #0a8080e9;
+    padding: 10px 50px;
+    border-radius: 15px;
+
 }
 
-.FAQ .question div{
+.FAQ .question {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: black 1px dashed;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
-.FAQ div h1 {
-    font-size: 16px;
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+
+.bloc.active .answer {
+    max-height: 900px;
+}
+
+.fa-chevron-down {
+    font-size: 18px;
+    transition: 0.5s ease-in;
+}
+
+.bloc.active .fa-chevron-down {
+    transform: rotate(180deg);
+    color: white;
+}
+
+.bloc.active h1 {
+    color: white;
+}
+
+.bloc.active p {
+    color: rgb(228, 228, 228);
+}
+
+.FAQ .question h1 {
+    font-size: 20px;
     text-align: left;
 }
 
-/* .FAQ .on {
+.FAQ #on {
     display: none;
-} */
+}
 
-
+.equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0px;
+}
 
 .title h1 {
     font-size: 30px;
@@ -212,9 +248,12 @@ header .fa-solid {
 
 .team {
     display: flex;
-    max-width: 900px;
-    margin: 40px auto 80px;
+    flex-wrap: wrap;
     gap: 50px;
+}
+
+.team .team-img {
+    max-width: 300px;
 }
 
 .team .team-img h1 {
@@ -226,11 +265,6 @@ header .fa-solid {
     font-size: 10px;
     color: #7589A1;
 }
-
-.team .team-img {
-    width: 33.33%;
-}
-
 
 .sub {
     background-color: #efe2da8b;
@@ -405,9 +439,29 @@ i.dr {
         display: none;
     }
 
-    /* .FAQ .on {
+    .FAQ {
+        padding-top: 20%;
+    }
+
+    .FAQ #on {
         display: flex;
-    } */
+    }
+
+    .FAQ .bloc {
+        max-width: 100%;
+    }
+
+    .FAQ .bloc h1 {
+        font-size: 15px;
+    }
+
+    .FAQ .bloc p {
+        font-size: 13px;
+    }
+
+    .FAQ .bloc .fa-chevron-down {
+        font-size: 15px;
+    }
 
     .cactus,
     .book {
