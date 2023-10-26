@@ -53,16 +53,16 @@
       </p>
     </div>
 
-    <form class="contact-form">
+    <form class="contact-form" id="login-form">
       <div>
         <label>Enter email address</label>
-        <input type="email" placeholder="email address" />
-        <span>please enter a valid email</span>
+        <input type="email" id="login-mail" placeholder="email address" />
+        <span class="email-error">please enter a valid email</span>
       </div>
       <div>
         <label>password</label>
-        <input type="password" placeholder="password" />
-        <span>please enter a valid password</span>
+        <input type="password" id="password" placeholder="password" />
+        <span class="password-error">please enter a valid password</span>
       </div>
       <input type="submit" value="login" aria-label="login" />
     </form>

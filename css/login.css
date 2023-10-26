@@ -140,7 +140,8 @@ label {
 }
 
 .contact-form span {
-  
+  color: red;
+  display: none;
 }
 
 .sub {
