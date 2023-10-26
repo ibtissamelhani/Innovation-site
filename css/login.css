@@ -216,8 +216,8 @@ span {
   display: flex;
   align-items: center;    
   flex-wrap: wrap;
-  gap: 50px;
-  padding: 20px 5%;
+  gap: 10%;
+  padding: 30px 5%;
 }
 
 .footer h1 {
