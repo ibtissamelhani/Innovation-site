@@ -266,6 +266,7 @@ header .fa-solid {
     font-size: 10px;
     color: #7589A1;
 }
+
 .flesh {
     display: none;
 }
@@ -341,11 +342,10 @@ span {
 
 .footer {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 5%;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px 5%;
 }
 
 .footer h1 {
@@ -386,7 +386,91 @@ i.dr {
     color: rgb(244, 35, 87);
 }
 
-@media screen and (max-width: 650px) {
+
+@media (min-width: 700px) and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        padding: 20% 0;
+        transform: translateY(-100%);
+        z-index: 1;
+        background-color: rgba(253, 195, 108, 0.955);
+        transition: 0.3s;
+    }
+
+    nav.mobile-menu {
+        transform: translateY(0);
+    }
+
+    nav ul,
+    .login {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header .fa-solid {
+        display: block;
+        z-index: 999;
+    }
+
+    header .img-log {
+        z-index: 999;
+    }
+
+    .cont-1,
+    .cont-2 {
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .container .text {
+        max-width: 100%;
+    }
+
+    .team {
+        align-items: center;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .team .team-img img {
+        max-width: 80%;
+    }
+
+    .team .team-img h1 {
+        font-size: 20px;
+    }
+
+    .team .team-img p {
+        font-size: 15px;
+    }
+
+    .team .team-img i {
+        font-size: 20px;
+    }
+
+    .sub-form {
+        padding: 15px;
+    }
+
+    .sub-form h2 {
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 700px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -471,6 +555,7 @@ i.dr {
         padding: 20px 0;
         position: relative;
     }
+
     .flesh {
         display: block;
     }
@@ -500,7 +585,7 @@ i.dr {
         padding: 20px;
         overflow: hidden;
     }
-   
+
 
     .team .team-img {
         display: flex;
@@ -509,19 +594,23 @@ i.dr {
         text-align: center;
         min-width: 100%;
     }
+
     .team .team-img img {
         max-width: 80%;
     }
+
     .team .team-img h1 {
         font-size: 20px;
     }
+
     .team .team-img p {
         font-size: 15px;
     }
+
     .team .team-img i {
         font-size: 20px;
     }
-    
+
 
 
     .cactus,

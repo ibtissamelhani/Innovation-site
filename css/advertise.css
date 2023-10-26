@@ -299,11 +299,10 @@ span {
 
 .footer {
     display: flex;
+    align-items: center;    
     flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
-    max-width: 80%;
-    margin: 50px auto;
+    gap: 50px;
+    padding: 20px 5%;
 }
 
 .footer h1 {
@@ -394,7 +393,21 @@ span {
     }
 
     .home-text p {
-        font-size: 15px;
+        font-size: 20px;
+    }
+    .modal {
+        margin: 40% 18%;
+    }
+
+    .modal button {
+        font-size: 20px;
+    }
+
+    .modal a {
+        font-size: 20px;
+    }
+    .modal p {
+        font-size: 25px;
     }
 
     .sub-form {
@@ -492,7 +505,7 @@ span {
     }
 
     .modal a {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .advertise .title-1,
