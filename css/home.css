@@ -222,8 +222,6 @@ header .fa-solid {
     gap: 30px;
 }
 
-
-
 .team .team-img h1 {
     font-size: 15px;
     line-height: 2rem;
@@ -411,8 +409,72 @@ i.dr {
     color: rgb(244, 35, 87);
 }
 
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        padding: 20% 0;
+        transform: translateY(-100%);
+        z-index: 1;
+        background-color: rgba(253, 195, 108, 0.955);
+        transition: 0.3s;
+    }
 
-@media screen and (max-width:650px) {
+    nav.mobile-menu {
+        transform: translateY(0);
+    }
+
+    nav ul,
+    .login {
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    header .fa-solid {
+        display: block;
+        z-index: 999;
+    }
+
+    header .img-log {
+        z-index: 999;
+    }
+
+    /* .home {
+        padding-top: 10%;
+        padding-left: 10px;
+        flex-wrap: nowrap;
+    } */
+/* 
+    .home-text h1 {
+        font-size: 30px;
+    } */
+
+    /* .home-text p {
+        font-size: 15px;
+    } */
+
+    .sub-form {
+        padding: 15px;
+    }
+
+    .sub-form h2 {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
     nav {
         flex-direction: column;
         align-items: center;
