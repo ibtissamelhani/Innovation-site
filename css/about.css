@@ -8,6 +8,7 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     color: black;
+    /* border: red 1px solid; */
 }
 
 body {
@@ -265,6 +266,9 @@ header .fa-solid {
     font-size: 10px;
     color: #7589A1;
 }
+.flesh {
+    display: none;
+}
 
 .sub {
     background-color: #efe2da8b;
@@ -338,10 +342,10 @@ span {
 .footer {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    justify-content: space-around;
-    max-width: 80%;
-    margin: 50px auto;
+    justify-content: space-between;
+    padding: 5%;
 }
 
 .footer h1 {
@@ -463,9 +467,70 @@ i.dr {
         font-size: 15px;
     }
 
+    .equipe {
+        padding: 20px 0;
+        position: relative;
+    }
+    .flesh {
+        display: block;
+    }
+
+    .flesh .fa-circle-chevron-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    .flesh .fa-circle-chevron-right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+
+    .flesh i {
+        color: #138d8d9d;
+        font-size: 40px;
+    }
+
+    .team {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        gap: 50px;
+        padding: 20px;
+        overflow: hidden;
+    }
+   
+
+    .team .team-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 100%;
+    }
+    .team .team-img img {
+        max-width: 80%;
+    }
+    .team .team-img h1 {
+        font-size: 20px;
+    }
+    .team .team-img p {
+        font-size: 15px;
+    }
+    .team .team-img i {
+        font-size: 20px;
+    }
+    
+
+
     .cactus,
     .book {
         display: none;
+    }
+
+    .sub {
+        padding: 20px 0;
     }
 
     .sub-form {

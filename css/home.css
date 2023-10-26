@@ -130,7 +130,6 @@ header .fa-solid {
     align-items: center;
     gap: 30px;
     padding: 100px 20px;
-    background-color: #DB4A87;
     background-color: #ffeddf6e;
     margin-top: 140px;
 }
@@ -156,15 +155,40 @@ header .fa-solid {
     color: #7e88964f;
 }
 
+@keyframes slide {
+    form {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+
+    }
+}
+
 .container .images {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 80px;
-    padding: 20px 0;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    white-space: nowrap;
     border-top: solid rgba(90, 88, 88, 0.327);
     border-bottom: solid rgba(90, 88, 88, 0.327);
 
+}
+
+.container .images:hover .infinite {
+    animation-play-state: paused;
+}
+
+.container .images .infinite {
+    display: inline-block;
+    padding: 20px 0;
+    animation: 10s slide infinite linear;
+}
+
+.container .images img {
+    height: 30px;
+    margin: 0 60px;
 }
 
 .title {
@@ -181,11 +205,15 @@ header .fa-solid {
     line-height: 2rem;
 }
 
-.superhero {
+.equipe {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+.flesh {
+    display: none;
 }
 
 .team {
@@ -194,10 +222,7 @@ header .fa-solid {
     gap: 30px;
 }
 
-/* 
-.team .team-img {
-    max-width: 33.33%;
-} */
+
 
 .team .team-img h1 {
     font-size: 15px;
@@ -219,9 +244,11 @@ header .fa-solid {
 
 .blog {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap:wrap ;
+    padding: 20px;
+    gap: 10px;
 }
+
 
 .blog h1 {
     color: #0F2137;
@@ -251,6 +278,8 @@ header .fa-solid {
     gap: 50px;
     z-index: 2;
 }
+
+
 
 .blog-5 {
     display: flex;
@@ -312,9 +341,9 @@ header .fa-solid {
     border: none;
     border-radius: 5px;
     padding: 10px 40px;
-  }
-  
-  .sub-form input[type="submit"] {
+}
+
+.sub-form input[type="submit"] {
     background-color: #db4a86;
     color: white;
     outline: none;
@@ -322,18 +351,18 @@ header .fa-solid {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  input[type="checkbox"] {
+}
+
+input[type="checkbox"] {
     background-color: #d4dae2b3;
     outline: none;
     border: none;
-  }
-  
-  span {
+}
+
+span {
     font-size: 12px;
     color: #4b4b4ca0;
-  }
+}
 
 .footer {
     display: flex;
@@ -470,6 +499,84 @@ i.dr {
     .blog p {
         font-size: 15px;
     }
+
+    .equipe {
+        position: relative;
+    }
+
+    .title p {
+        font-size: 15px;
+    }
+
+    .flesh {
+        display: block;
+    }
+
+    .flesh .fa-circle-chevron-left {
+        position: absolute;
+        top: 60%;
+        left: 0;
+    }
+
+    .flesh .fa-circle-chevron-right {
+        position: absolute;
+        top: 60%;
+        right: 0;
+    }
+
+    .flesh i {
+        color: #138d8d9d;
+        font-size: 40px;
+    }
+
+
+
+    .team {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        gap: 50px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+
+    .team .team-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .team .team-img img {
+        max-width: 80%;
+    }
+
+    .team .team-img h1 {
+        font-size: 20px;
+    }
+
+    .team .team-img p {
+        font-size: 15px;
+    }
+
+    .team .team-img i {
+        font-size: 20px;
+    }
+
+    .bloging {
+        background-color: #efe2da8b;
+        padding-bottom: 20px;
+    }
+
+    .blog-5 h1 {
+        font-size: 17px;
+    }
+    .blog-2 {
+        background-color: #fff;
+    }
+
 
     .cactus,
     .book {

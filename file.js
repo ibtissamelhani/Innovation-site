@@ -26,3 +26,19 @@ faqs.forEach((bloc) => {
     }
   });
 });
+
+// slider page about
+const next = document.querySelector(".fa-circle-chevron-right");
+const prec = document.querySelector(".fa-circle-chevron-left");
+
+next.addEventListener("click", () => {
+  const widthSlide = document.querySelector(".equipe").offsetWidth;
+  const items = document.querySelector(".team");
+  items.scrollLeft += widthSlide;
+});
+
+prec.addEventListener("click", () => {
+  const widthSlide = document.querySelector(".equipe").offsetWidth;
+  const items = document.querySelector(".team");
+  items.scrollLeft -= widthSlide;
+});
