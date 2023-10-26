@@ -69,19 +69,31 @@
                 <div class="name">
                     <div>
                         <label>First name</label>
-                        <input type="text" placeholder="First name">
+                        <input type="text" id="first-name" placeholder="First name">
+                        <span class="first-name-error">invalid first name</span>
                     </div>
                     <div>
                         <label>Last name</label>
-                        <input type="text" placeholder="Last name">
+                        <input type="text" id="last-name" placeholder="Last name">
+                        <span class="last-name-error">invalid last name</span>
                     </div>
                 </div>
-                <label>Enter email address</label>
-                <input type="email" placeholder="email address">
-                <label>Contact Number</label>
-                <input type="text" placeholder="Contact number">
-                <label>Enter your message here</label>
-                <input type="text" placeholder="message">
+                <div>
+                    <label>Enter email address</label>
+                    <input type="email" id="email" placeholder="email address">
+                    <span class="email-error">email required</span>
+                </div>
+                <div>
+                    <label>Contact Number</label>
+                    <input type="text" id="phone" placeholder="Contact number">
+                    <span class="phone-error">invalid phone number</span>
+                </div>
+                <div>
+                    <label>Enter your message here</label>
+                    <textarea id="textarea" placeholder="message"></textarea>
+                    <span class="textarea-error">entrer at least 20 caractères</span>
+                </div>
+
                 <input type="submit" value="contact us" aria-label="submit">
             </form>
         </div>
@@ -172,7 +184,7 @@
             </ul>
         </div>
     </section>
-    <script src="file.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
